@@ -31,7 +31,6 @@ class Board:
 
 
   def get_winner(self):
-        # Check rows, columns, and diagonals for a win
         for i in range(3):
             if self._rows[i][0] == self._rows[i][1] == self._rows[i][2] is not None or \
                self._rows[0][i] == self._rows[1][i] == self._rows[2][i] is not None:
